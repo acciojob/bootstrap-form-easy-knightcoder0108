@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,54 +9,55 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h2>Internship Form</h2>
+        <h2 class="text-center">Internship Form</h2>
         <form class="needs-validation" novalidate>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
-                    <div class="invalid-feedback">Please provide a first name.</div>
+                    <label for="first-name-input">First Name</label>
+                    <input type="text" class="form-control" id="first-name-input" placeholder="First Name" required>
+                    <div class="invalid-feedback">First name required</div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-                    <div class="invalid-feedback">Please provide a last name.</div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                    <div class="invalid-feedback">Please provide a valid email address.</div>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="college">College</label>
-                    <input type="text" class="form-control" id="college" placeholder="College" required>
-                    <div class="invalid-feedback">Please provide a college name.</div>
+                    <label for="last-name-input">Last Name</label>
+                    <input type="text" class="form-control" id="last-name-input" placeholder="Last Name" required>
+                    <div class="invalid-feedback">Last name required</div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="gradYear">Graduation Year</label>
-                    <select id="gradYear" class="form-control" required>
+                    <label for="email-input">Email Address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email" required>
+                    <div class="invalid-feedback">Email required</div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="college-input">College</label>
+                    <input type="text" class="form-control" id="college-input" placeholder="College" required>
+                    <div class="invalid-feedback">Please provide a valid college.</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="grad-year-input">Graduation Year</label>
+                    <select id="grad-year-input" class="form-control" required>
                         <option value="">Choose...</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
                         <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
                     </select>
-                    <div class="invalid-feedback">Please select a graduation year.</div>
+                    <div class="invalid-feedback">Please select a valid Graduation Year.</div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="refNo">Ref No.</label>
-                    <input type="text" class="form-control" id="refNo" placeholder="Ref No." required>
-                    <div class="invalid-feedback">Please provide a reference number.</div>
+                    <label for="roll-no-input">Roll No.</label>
+                    <input type="text" class="form-control" id="roll-no-input" placeholder="Roll No." required>
+                    <div class="invalid-feedback">Please provide a valid roll no.</div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="agree" required>
-                    <label class="form-check-label" for="agree">Agree to terms and conditions</label>
-                    <div class="invalid-feedback">You must agree before submitting.</div>
+                    <input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+                    <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting</div>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit form</button>
